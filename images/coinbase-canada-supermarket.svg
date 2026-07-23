@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051937"/>
+      <stop offset="50%" stop-color="#004d7a"/>
+      <stop offset="100%" stop-color="#008793"/>
+    </linearGradient>
+
+    <linearGradient id="coinbaseBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0052ff"/>
+      <stop offset="100%" stop-color="#1652f0"/>
+    </linearGradient>
+
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#cbBg)"/>
+  
+  <path d="M0 135 H1200 M0 270 H1200 M0 405 H1200 M0 540 H1200" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <path d="M300 0 V675 M600 0 V675 M900 0 V675" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Supermarket Title Header -->
+  <rect x="80" y="40" width="1040" height="110" rx="16" fill="rgba(11, 14, 23, 0.9)" stroke="#0052ff" stroke-width="3" filter="url(#glowEffect)"/>
+  <text x="600" y="85" text-anchor="middle" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="900" font-size="28" letter-spacing="1">ONE APP, EVERY AISLE: COINBASE CANADA 🍁</text>
+  <text x="600" y="125" text-anchor="middle" fill="#00ff9d" font-family="-apple-system, sans-serif" font-weight="700" font-size="18" letter-spacing="1">INSIDE THE PLAN TO BECOME CANADA'S FINANCIAL SUPERMARKET</text>
+
+  <!-- Supermarket Aisles Illustration Cards -->
+  <!-- Aisle 1: Crypto -->
+  <g transform="translate(180, 360)">
+    <rect x="-110" y="-150" width="220" height="300" rx="14" fill="#0b0e17" stroke="#0052ff" stroke-width="2"/>
+    <rect x="-110" y="-150" width="220" height="45" rx="14" fill="#0052ff"/>
+    <text x="0" y="-120" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="16">CRYPTO AISLE</text>
+    <circle cx="0" cy="-30" r="40" fill="#f7931a"/>
+    <text x="0" y="-18" text-anchor="middle" fill="#ffffff" font-weight="900" font-size="32">₿</text>
+    <text x="0" y="50" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="16">Bitcoin &amp; ETH</text>
+    <text x="0" y="80" text-anchor="middle" fill="#00ff9d" font-family="sans-serif" font-size="13">Fully Live (2024)</text>
+  </g>
+
+  <!-- Aisle 2: Tokenized Stocks -->
+  <g transform="translate(460, 360)">
+    <rect x="-110" y="-150" width="220" height="300" rx="14" fill="#0b0e17" stroke="#00ff9d" stroke-width="2"/>
+    <rect x="-110" y="-150" width="220" height="45" rx="14" fill="#00ff9d"/>
+    <text x="0" y="-120" text-anchor="middle" fill="#0b0e17" font-family="sans-serif" font-weight="800" font-size="16">STOCKS &amp; ETFs</text>
+    <circle cx="0" cy="-30" r="40" fill="#00f0ff" opacity="0.2"/>
+    <path d="M-20 -10 L-5 -30 L10 -20 L25 -40" fill="none" stroke="#00f0ff" stroke-width="4"/>
+    <text x="0" y="50" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="16">10,000 Equities</text>
+    <text x="0" y="80" text-anchor="middle" fill="#00ff9d" font-family="sans-serif" font-size="13">Tokenized Launch</text>
+  </g>
+
+  <!-- Aisle 3: Prediction Markets -->
+  <g transform="translate(740, 360)">
+    <rect x="-110" y="-150" width="220" height="300" rx="14" fill="#0b0e17" stroke="#a855f7" stroke-width="2"/>
+    <rect x="-110" y="-150" width="220" height="45" rx="14" fill="#a855f7"/>
+    <text x="0" y="-120" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="16">PREDICTION AISLE</text>
+    <circle cx="0" cy="-30" r="40" fill="#a855f7" opacity="0.2"/>
+    <text x="0" y="-20" text-anchor="middle" fill="#a855f7" font-size="32">🎯</text>
+    <text x="0" y="50" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="16">Event Wagers</text>
+    <text x="0" y="80" text-anchor="middle" fill="#a855f7" font-family="sans-serif" font-size="13">Kalshi Integration</text>
+  </g>
+
+  <!-- Aisle 4: AI Advisor & SuperApp -->
+  <g transform="translate(1020, 360)">
+    <rect x="-110" y="-150" width="220" height="300" rx="14" fill="#0b0e17" stroke="#00f0ff" stroke-width="2"/>
+    <rect x="-110" y="-150" width="220" height="45" rx="14" fill="#00f0ff"/>
+    <text x="0" y="-120" text-anchor="middle" fill="#0b0e17" font-family="sans-serif" font-weight="800" font-size="16">SUPERAPP</text>
+    <circle cx="0" cy="-30" r="40" fill="#0052ff" opacity="0.3"/>
+    <text x="0" y="-20" text-anchor="middle" fill="#00f0ff" font-size="32">🤖</text>
+    <text x="0" y="50" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="16">AI Trading Agents</text>
+    <text x="0" y="80" text-anchor="middle" fill="#00f0ff" font-family="sans-serif" font-size="13">24/7 Settlement</text>
+  </g>
+
+  <!-- AI Credit Notice -->
+  <rect x="1000" y="615" width="160" height="35" rx="6" fill="rgba(0,0,0,0.7)" stroke="#0052ff" stroke-width="1"/>
+  <text x="1080" y="638" text-anchor="middle" fill="#00f0ff" font-family="sans-serif" font-size="12" font-weight="600">Created by AI</text>
+</svg>

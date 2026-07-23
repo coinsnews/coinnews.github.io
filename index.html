@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CrypticPulse | Real-Time Bitcoin &amp; Cryptocurrency News, Data &amp; Analysis</title>
+  <meta name="description" content="CrypticPulse brings you blazing-fast, accurate cryptocurrency news, Bitcoin halving insights, DeFi analysis, and blockchain market intelligence.">
+  <link rel="canonical" href="https://coinnews.github.io/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://coinnews.github.io/">
+  <meta property="og:title" content="CrypticPulse | Real-Time Bitcoin &amp; Cryptocurrency News">
+  <meta property="og:description" content="Stay ahead of the crypto market with breaking news, deep technical analysis, and market metrics.">
+  <meta property="og:image" content="https://coinnews.github.io/images/hero-btc.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CrypticPulse | Bitcoin &amp; Crypto Intelligence">
+  <meta name="twitter:description" content="Blazing-fast crypto news and market data analytics.">
+  <meta name="twitter:image" content="https://coinnews.github.io/images/hero-btc.svg">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "CrypticPulse",
+    "url": "https://coinnews.github.io",
+    "logo": "https://coinnews.github.io/images/hero-btc.svg",
+    "sameAs": [
+      "https://twitter.com/crypticpulse",
+      "https://t.me/crypticpulse"
+    ],
+    "description": "Leading decentralized news source for Bitcoin, Ethereum, and crypto regulation insights."
+  }
+  </script>
+</head>
+<body data-page="home">
+
+  <!-- Modular Header Placeholder -->
+  <div id="header-placeholder"></div>
+
+  <main class="container">
+    <!-- Real-Time Crypto Market Trend & Prediction Widget (Above-the-Fold UX) -->
+    <section class="prediction-section" aria-label="Real-Time Crypto Market Trend Predictions" style="margin-top: 1.5rem;">
+      <div class="section-header">
+        <h2 class="section-title">Live Market Outlook &amp; Sentiment Predictions</h2>
+        <span class="live-status-pill"><span class="pulse-dot"></span> Live CoinCap API Feed</span>
+      </div>
+
+      <div class="prediction-grid" id="crypto-prediction-widget">
+        <!-- Dynamically rendered by fetchCryptoPredictionData() in main.js -->
+        <div class="skeleton-loader card-skeleton"></div>
+        <div class="skeleton-loader card-skeleton"></div>
+        <div class="skeleton-loader card-skeleton"></div>
+      </div>
+    </section>
+
+    <!-- Hero Section: Featured Story Loop -->
+    <section class="hero-section" aria-label="Featured Breaking Crypto News">
+      <div id="heroFeaturedContainer">
+        <!-- Dynamically rendered by main.js from posts.js -->
+        <div class="skeleton-loader hero-skeleton"></div>
+      </div>
+    </section>
+
+    <!-- Market Overview Quick Stats Bar -->
+    <section class="market-stats-section" aria-label="Market Data Summary">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-title">BTC Dominance</span>
+          <span class="stat-value">54.8%</span>
+          <span class="stat-change up">+1.2%</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-title">24h Crypto Vol</span>
+          <span class="stat-value">$84.2B</span>
+          <span class="stat-change up">+5.4%</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-title">Fear &amp; Greed Index</span>
+          <span class="stat-value">39 (Fear)</span>
+          <span class="stat-change down">-2 pts</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-title">ETH Gas Price</span>
+          <span class="stat-value">12 Gwei</span>
+          <span class="stat-change down">-3 Gwei</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest News Grid Loop (Compact Feed) -->
+    <section class="latest-news-section" aria-label="Latest Cryptocurrency News">
+      <div class="section-header">
+        <h2 class="section-title">Latest Intelligence</h2>
+        <a href="/blog/" data-route="/blog/" class="view-all-link">View All Feed &rarr;</a>
+      </div>
+
+      <div class="news-grid-compact" id="latestPostsGrid">
+        <!-- Dynamically rendered by main.js from posts.js -->
+        <div class="skeleton-loader card-skeleton"></div>
+        <div class="skeleton-loader card-skeleton"></div>
+        <div class="skeleton-loader card-skeleton"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modular Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Central Content Repository & Application Logic -->
+  <script src="/data/posts.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

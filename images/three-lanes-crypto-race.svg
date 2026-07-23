@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="raceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0e17"/>
+      <stop offset="50%" stop-color="#161c2d"/>
+      <stop offset="100%" stop-color="#0a1220"/>
+    </linearGradient>
+
+    <linearGradient id="btcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7931a"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <linearGradient id="hbarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ff9d"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <linearGradient id="ldoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#raceBg)"/>
+
+  <!-- Race Track Lines Perspective -->
+  <polygon points="100,675 400,200 800,200 1100,675" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  
+  <!-- Lane Dividers -->
+  <line x1="433" y1="675" x2="533" y2="200" stroke="#ffffff" stroke-width="3" stroke-dasharray="15 15"/>
+  <line x1="766" y1="675" x2="666" y2="200" stroke="#ffffff" stroke-width="3" stroke-dasharray="15 15"/>
+
+  <!-- Resistance Wall at the End -->
+  <rect x="360" y="140" width="480" height="70" rx="8" fill="#1e293b" stroke="#ff4d6d" stroke-width="3"/>
+  <text x="600" y="180" text-anchor="middle" fill="#ff4d6d" font-family="-apple-system, sans-serif" font-weight="900" font-size="24" letter-spacing="2">RESISTANCE WALL (200-DAY EMA)</text>
+
+  <!-- Title Card Header -->
+  <rect x="80" y="30" width="1040" height="95" rx="14" fill="rgba(19, 27, 46, 0.9)" stroke="rgba(0, 240, 255, 0.4)" stroke-width="2" filter="url(#glowEffect)"/>
+  <text x="600" y="70" text-anchor="middle" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="900" font-size="26" letter-spacing="1">THREE LANES, ONE RACE: BITCOIN SLOWS DOWN</text>
+  <text x="600" y="105" text-anchor="middle" fill="#00ff9d" font-family="-apple-system, sans-serif" font-weight="700" font-size="16" letter-spacing="1">WHILE HBAR AND LDO SPRINT TOWARD THE WALL</text>
+
+  <!-- Lane 1: Bitcoin (Slowing Down) -->
+  <g transform="translate(260, 520)" filter="url(#glowEffect)">
+    <circle cx="0" cy="0" r="60" fill="url(#btcGrad)" stroke="#ffffff" stroke-width="3"/>
+    <text x="0" y="12" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="900" font-size="40">₿</text>
+    <rect x="-70" y="80" width="140" height="35" rx="6" fill="#1e293b" stroke="#f7931a" stroke-width="1"/>
+    <text x="0" y="102" text-anchor="middle" fill="#f7931a" font-family="monospace" font-weight="700" font-size="14">BTC: $65,800</text>
+    <text x="0" y="130" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Slowing Down</text>
+  </g>
+
+  <!-- Lane 2: Hedera (HBAR Sprinting) -->
+  <g transform="translate(600, 440)" filter="url(#glowEffect)">
+    <circle cx="0" cy="0" r="55" fill="url(#hbarGrad)" stroke="#ffffff" stroke-width="3"/>
+    <text x="0" y="12" text-anchor="middle" fill="#0b0e17" font-family="sans-serif" font-weight="900" font-size="32">Ħ</text>
+    <rect x="-70" y="75" width="140" height="35" rx="6" fill="#1e293b" stroke="#00ff9d" stroke-width="1"/>
+    <text x="0" y="97" text-anchor="middle" fill="#00ff9d" font-family="monospace" font-weight="700" font-size="14">HBAR: +4.2%</text>
+    <text x="0" y="125" text-anchor="middle" fill="#00ff9d" font-family="sans-serif" font-size="12">Sprinting (+4%)</text>
+  </g>
+
+  <!-- Lane 3: Lido DAO (LDO Sprinting) -->
+  <g transform="translate(940, 360)" filter="url(#glowEffect)">
+    <circle cx="0" cy="0" r="55" fill="url(#ldoGrad)" stroke="#ffffff" stroke-width="3"/>
+    <polygon points="0,-25 20,15 -20,15" fill="#ffffff"/>
+    <rect x="-70" y="75" width="140" height="35" rx="6" fill="#1e293b" stroke="#00f0ff" stroke-width="1"/>
+    <text x="0" y="97" text-anchor="middle" fill="#00f0ff" font-family="monospace" font-weight="700" font-size="14">LDO: +12% Wk</text>
+    <text x="0" y="125" text-anchor="middle" fill="#00f0ff" font-family="sans-serif" font-size="12">RSI 75 Overbought</text>
+  </g>
+
+  <!-- AI Credit Notice -->
+  <rect x="1000" y="615" width="160" height="35" rx="6" fill="rgba(0,0,0,0.7)" stroke="#00f0ff" stroke-width="1"/>
+  <text x="1080" y="638" text-anchor="middle" fill="#00f0ff" font-family="sans-serif" font-size="12" font-weight="600">Created by AI</text>
+</svg>

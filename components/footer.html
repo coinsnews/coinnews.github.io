@@ -1,0 +1,91 @@
+<!-- Footer Section -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="/" data-route="/" class="brand-logo">
+        <svg viewBox="0 0 32 32" fill="none" class="brand-icon" width="32" height="32">
+          <circle cx="16" cy="16" r="14" stroke="#00ff9d" stroke-width="3"/>
+          <path d="M10 16L14 20L22 12" stroke="#00f0ff" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span>Cryptic<span class="pulse">Pulse</span></span>
+      </a>
+      <p class="footer-desc">
+        CrypticPulse is a decentralized crypto news &amp; market intelligence engine delivering real-time Bitcoin analytics, DeFi security research, and Layer-2 scaling metrics.
+      </p>
+      <div class="social-links">
+        <a href="https://twitter.com/crypticpulse" target="_blank" rel="noopener noreferrer" aria-label="Follow CrypticPulse on X/Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://t.me/crypticpulse" target="_blank" rel="noopener noreferrer" aria-label="Join CrypticPulse Telegram Channel">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.25.38-.51 1.07-.78 4.18-1.82 6.97-3.02 8.37-3.61 3.99-1.66 4.82-1.95 5.36-1.96.12 0 .38.03.55.17.14.12.18.28.2.45-.02.07-.02.13-.03.24z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3 class="footer-title">Navigation</h3>
+      <ul class="footer-links">
+        <li><a href="/" data-route="/">Home Page</a></li>
+        <li><a href="/blog/" data-route="/blog/">News Feed &amp; Archive</a></li>
+        <li><a href="/about/" data-route="/about/">About &amp; Editorial Mission</a></li>
+        <li><a href="/contact/" data-route="/contact/">Contact Editorial Team</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3 class="footer-title">Legal &amp; Policy</h3>
+      <ul class="footer-links">
+        <li><a href="/privacy-policy/" data-route="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-conditions/" data-route="/terms-conditions/">Terms &amp; Conditions</a></li>
+        <li><a href="/terms-conditions/#disclaimer">Risk Disclaimer</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3 class="footer-title">Intel Pulse Digest</h3>
+      <p class="footer-desc">Get weekly on-chain reports and breaking crypto alerts directly in your inbox.</p>
+      <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Subscribed to CrypticPulse Daily Digest!'); this.reset();">
+        <input type="email" placeholder="Enter your email" required class="newsletter-input" aria-label="Email address for newsletter">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>&copy; 2026 CrypticPulse. All rights reserved. Decoupled static blog engine.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Cookie Consent Banner -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie Consent Notice">
+  <div class="cookie-content">
+    <p>
+      We use cookies and local browser storage to optimize site performance, retain your dark/light theme choice, and provide crypto market data analytics. Read our <a href="/privacy-policy/" data-route="/privacy-policy/">Privacy Policy</a>.
+    </p>
+    <div class="cookie-actions">
+      <button class="btn btn-sm btn-primary" id="cookieAccept">Accept All</button>
+      <button class="btn btn-sm btn-outline" id="cookieReject">Decline</button>
+    </div>
+  </div>
+</div>
+
+<!-- Floating Push Notification Toast Card -->
+<div class="push-toast-card" id="pushModal" role="dialog" aria-modal="true" aria-label="Push Notification Permission Prompt">
+  <div class="push-toast-header">
+    <div class="push-toast-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#00ff9d" stroke-width="2" width="24" height="24">
+        <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="push-toast-title">
+      <h4>Enable Breaking News Alerts?</h4>
+      <p>Get instant updates on Bitcoin supply shocks &amp; market moves.</p>
+    </div>
+  </div>
+  <div class="push-toast-actions">
+    <button class="btn btn-sm btn-primary" id="pushAllow">Allow Notifications</button>
+    <button class="btn btn-sm btn-outline" id="pushDecline">Later</button>
+  </div>
+</div>
